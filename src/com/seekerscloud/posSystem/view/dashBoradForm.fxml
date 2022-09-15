@@ -7,9 +7,9 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="349.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekerscloud.posSystem.controller.DashBoradFormController">
+<AnchorPane fx:id="dashBoardContext" prefHeight="414.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekerscloud.posSystem.controller.DashBoradFormController">
    <children>
-      <JFXButton layoutX="21.0" layoutY="21.0" onAction="#openCstmrFormOnAction" prefHeight="107.0" prefWidth="198.0" style="-fx-background-color: #AA1920;" text="Cstomer Management" textAlignment="CENTER" textFill="WHITE">
+      <JFXButton layoutX="17.0" layoutY="63.0" onAction="#openCstmrFormOnAction" prefHeight="107.0" prefWidth="198.0" style="-fx-background-color: #AA1920;" text="Cstomer Management" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Carlito Bold" size="17.0" />
          </font>
@@ -17,7 +17,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="236.0" layoutY="21.0" onAction="#openItemFormOnAction" prefHeight="107.0" prefWidth="214.0" style="-fx-background-color: #d35300;" text="Item Management" textFill="WHITE">
+      <JFXButton layoutX="229.0" layoutY="64.0" onAction="#openItemFormOnAction" prefHeight="107.0" prefWidth="214.0" style="-fx-background-color: #d35300;" text="Item Management" textFill="WHITE">
          <font>
             <Font name="Carlito" size="18.0" />
          </font>
@@ -25,7 +25,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="467.0" layoutY="23.0" onAction="#openOrderDetailsFormOnAction" prefHeight="107.0" prefWidth="183.0" style="-fx-background-color: #d16062;" text="Order Details" textFill="WHITE">
+      <JFXButton layoutX="458.0" layoutY="64.0" onAction="#openOrderDetailsFormOnAction" prefHeight="107.0" prefWidth="183.0" style="-fx-background-color: #d16062;" text="Order Details" textFill="WHITE">
          <font>
             <Font name="Candara Bold" size="17.0" />
          </font>
@@ -33,7 +33,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="16.0" layoutY="146.0" onAction="#openPlaceOrderFormOnAction" prefHeight="135.0" prefWidth="627.0" style="-fx-background-color: #Ab2991;" text="Place Order" textFill="WHITE">
+      <JFXButton layoutX="16.0" layoutY="185.0" onAction="#openPlaceOrderFormOnAction" prefHeight="135.0" prefWidth="627.0" style="-fx-background-color: #Ab2991;" text="Place Order" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="17.0" />
          </font>
@@ -41,7 +41,17 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <Label layoutX="21.0" layoutY="289.0" prefHeight="17.0" prefWidth="191.0" text="Developed by : Aashiq ahamed" />
-      <Label layoutX="600.0" layoutY="289.0" prefHeight="17.0" prefWidth="50.0" text="1.0.0" />
+      <Label layoutX="20.0" layoutY="330.0" prefHeight="17.0" prefWidth="191.0" text="Developed by : Aashiq ahamed" />
+      <Label layoutX="599.0" layoutY="331.0" prefHeight="17.0" prefWidth="50.0" text="1.0.0" />
+      <Label alignment="CENTER" layoutX="18.0" layoutY="19.0" prefHeight="30.0" prefWidth="415.0" style="-fx-background-color: #718093;" text="MyShopp" textFill="WHITE">
+         <font>
+            <Font name="Corbel" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" alignment="CENTER_RIGHT" layoutX="447.0" layoutY="19.0" prefHeight="30.0" prefWidth="191.0" style="-fx-background-color: #718093;" text="12:06" textFill="WHITE">
+         <font>
+            <Font name="Corbel" size="17.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

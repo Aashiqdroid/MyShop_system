@@ -1,14 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.seekerscloud.posSystem.controller.ConstmrFormController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekerscloud.posSystem.controller.ConstmrFormController">
+   <children>
+      <JFXButton layoutX="14.0" layoutY="16.0" prefHeight="37.0" prefWidth="85.0" style="-fx-background-color: #2d3436;" text="Back" textFill="#fcfcfc">
+         <font>
+            <Font name="Cambria Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="513.0" layoutY="17.0" onAction="#saveconstomerOnAction" prefHeight="37.0" prefWidth="133.0" style="-fx-background-color: #636e72;" text="+ New cstmr" textFill="WHITE">
+         <font>
+            <Font name="Source Sans Pro Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="txtID" layoutX="14.0" layoutY="69.0" promptText="Cstmr ID" />
+      <TextField fx:id="txtName" layoutX="173.0" layoutY="69.0" prefHeight="25.0" prefWidth="109.0" promptText="Name" />
+      <TextField fx:id="txtAddress" layoutX="297.0" layoutY="69.0" prefHeight="25.0" prefWidth="160.0" promptText="Address" />
+      <TextField fx:id="txtSalary" layoutX="466.0" layoutY="69.0" prefHeight="25.0" prefWidth="174.0" promptText="Salary" />
+      <TextField layoutX="14.0" layoutY="113.0" prefHeight="25.0" prefWidth="452.0" promptText="Search" />
+      <JFXButton layoutX="484.0" layoutY="113.0" prefHeight="25.0" prefWidth="160.0" style="-fx-background-color: #00b894;" text="Search">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView layoutX="14.0" layoutY="155.0" prefHeight="200.0" prefWidth="633.0">
+        <columns>
+          <TableColumn prefWidth="81.0" text="ID" />
+          <TableColumn prefWidth="131.0" text="Name" />
+            <TableColumn prefWidth="129.0" text="Address" />
+            <TableColumn prefWidth="110.0" text="Salary" />
+            <TableColumn prefWidth="181.0" text="Options" />
+        </columns>
+      </TableView>
+      <Label alignment="TOP_LEFT" disable="true" layoutX="104.0" layoutY="18.0" prefHeight="34.0" prefWidth="403.0" style="-fx-background-color: #00cec9;" text="Costmer Form" textAlignment="CENTER">
+         <font>
+            <Font name="Serif Regular" size="32.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>
