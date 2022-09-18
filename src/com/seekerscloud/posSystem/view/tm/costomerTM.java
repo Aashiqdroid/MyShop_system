@@ -1,19 +1,26 @@
-package com.seekerscloud.posSystem.Modal;
+package com.seekerscloud.posSystem.view.tm;
 
-public class costomer {
+import javafx.scene.control.Button;
+
+public class costomerTM {
+
     private String id;
     private String name;
     private String address;
     private Double salary;
+    private Button btn;
 
-    public costomer() {
+    public costomerTM() {
+
+
     }
 
-    public costomer(String id, String name, String address, Double salary) {
+    public costomerTM(String id, String name, String address, Double salary, Button btn) {
         this.id = id;
         this.name = name;
         this.address = address;
         this.salary = salary;
+        this.btn = btn;
     }
 
     public String getId() {
@@ -46,5 +53,13 @@ public class costomer {
 
     public void setSalary(Double salary) {
         this.salary = salary;
+    }
+
+    public Button getBtn() {
+        return btn;
+    }
+
+    public void setBtn(Button btn) {
+        this.btn = btn;
     }
 }

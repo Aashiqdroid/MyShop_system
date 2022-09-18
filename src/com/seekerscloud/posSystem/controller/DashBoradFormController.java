@@ -21,7 +21,7 @@ public class DashBoradFormController {
     public Label lblTime;
 
 
-    public void initialize(){
+    public void initialize() {
         setTime();
     }
 
@@ -46,16 +46,15 @@ public class DashBoradFormController {
 
         Stage stage = (Stage) dashBoardContext.getScene().getWindow();
         stage.setScene(new Scene(FXMLLoader.load
-                (getClass().getResource("../view/"+ui+".fxml"))));
+                (getClass().getResource("../view/" + ui + ".fxml"))));
         stage.centerOnScreen();
 
     }
 
 
-
-    private void setTime(){
+    private void setTime() {
         //setting time
-        Timeline timeline = new Timeline(new KeyFrame(Duration.ZERO, e-> {
+        Timeline timeline = new Timeline(new KeyFrame(Duration.ZERO, e -> {
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
             lblTime.setText(LocalDateTime.now().format(formatter));
         }),
